@@ -11,6 +11,12 @@ module ieee802-dot1q-foo-test {
     "Test contact";
   description
     "Foo Example";
+  revision 2022-10-07 {
+    description
+      "Added another range.";
+    reference
+      "yangsters-smansfield-git-examples-1122-v01";
+  }
   revision 2022-10-01 {
     description
       "Initial revision.";
@@ -23,6 +29,10 @@ module ieee802-dot1q-foo-test {
     leaf foo-range {
       type qctt:value-range;
       description "range of foo";
+    }
+    leaf foo-alternative-range {
+      type qctt:value-range;
+      description "another range of foo";
     }
   }
 }
