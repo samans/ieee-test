@@ -1,0 +1,24 @@
+module ieee802-dot1q-common-types-test {
+  yang-version "1.1";
+  namespace urn:ieee:std:802.1Q:yang:ieee802-dot1q-common-types-test;
+  prefix qctt;
+  organization
+    "Test";
+  contact
+    "Test contact";
+  description
+    "Common Types Example";
+  revision 2022-10-01 {
+    description
+      "Initial revision.";
+    reference
+      "yangsters-smansfield-git-examples-1122-v01";
+  }
+  typedef value-range {
+    type uint8 {
+      range "0..7";
+    }
+    description
+    "A range of values from 0 to 7.";
+  }
+}

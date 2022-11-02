@@ -1,0 +1,28 @@
+module ieee802-dot1q-foo-test {
+  yang-version "1.1";
+  namespace urn:ieee:std:802.1Q:yang:ieee802-dot1q-foo-test;
+  prefix qft;
+  import ieee802-dot1q-common-types-test {
+    prefix qctt;
+  }
+  organization
+    "Test";
+  contact
+    "Test contact";
+  description
+    "Foo Example";
+  revision 2022-10-01 {
+    description
+      "Initial revision.";
+    reference
+      "yangsters-smansfield-git-examples-1122-v01";
+  }
+
+  container foo-sample {
+    description "foo sample";
+    leaf foo-range {
+      type qctt:value-range;
+      description "range of foo";
+    }
+  }
+}
