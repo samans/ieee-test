@@ -23,7 +23,7 @@ In the tutorial powerpoint:
     - git checkout main
     - git pull
     - git checkout foobar-04
-    - git merge main foobar-02 (this is the command that would show conflicts that need to be resolved -- none in this example)
+    - git merge main foobar-04 (this is the command that would show conflicts that need to be resolved -- none in this example)
  - Step 4 (push branch to origin)
     - git checkout foobar-04
     - git push origin foobar-04
@@ -31,5 +31,6 @@ In the tutorial powerpoint:
     - This is done at https://github.com/samans/ieee-test while logged in as samans-ncc75567 (or whatever the editors github id is)
  - Step 6
     - The "yang leader" logs in to https://github.com/samans/ieee-test (in this example as samans) and clicks the "Merge pull request" button
+    - The branch can be deleted after it is successfully merged
  - Step 7
     - The "yang leader" then follows the existing process to do a pull request of the changes to the IETF's YangModels/yang repository
