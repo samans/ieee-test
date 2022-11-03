@@ -66,9 +66,9 @@ module ieee802-dot1q-common-types-test {
     "opaque type for unsigned ints";
   }
 
-  typedef my-signed-int-type {
-    type int64;
+  typedef my-signed-small-int-type {
+    type int8;
     description
-    "opaque type for signed ints";
+    "opaque type for signed small ints";
   }
 }
