@@ -8,6 +8,12 @@ module ieee802-dot1q-common-types-test {
     "Test contact";
   description
     "Common Types Example";
+  revision 2022-11-01 {
+    description
+      "added yet another type";
+    reference
+      "yangsters-smansfield-git-examples-1122-v01";
+  }
   revision 2022-10-31 {
     description
       "added a type for number of foos";
@@ -46,5 +52,11 @@ module ieee802-dot1q-common-types-test {
     type uint64;
     description
     "opaque type for counting foos";
+  }
+
+  typedef my-unsigned-int-type {
+    type uint64;
+    description
+    "opaque type for unsigned ints";
   }
 }
